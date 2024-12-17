@@ -27,7 +27,7 @@ def clear_folder(folder_path):
     for item in os.listdir(folder_path):
         item_path = os.path.join(folder_path, item)
         if os.path.isfile(item_path) or os.path.islink(item_path):
-            os.unlink(item_path)  # 删除文件或链接
+            os.unlink(item_path)
         elif os.path.isdir(item_path):
             shutil.rmtree(item_path)
 
@@ -50,7 +50,6 @@ def plot_clusters(data_name,data, algorithm, args, kwds):
         os.makedirs(folder_path2)
 
 
-    #超时跳出
     try:
         start_time = time.time()
 

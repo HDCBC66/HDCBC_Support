@@ -1,7 +1,6 @@
 
 
 class CDC:
-    #data要求是dataframe
     def __init__(self,k_num,T_DCM):
         self.k_num=k_num
         self.T_DCM=T_DCM
